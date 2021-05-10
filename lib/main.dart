@@ -10,7 +10,7 @@ class VeterinariaApp extends StatelessWidget {
         title: 'Mi Veterinaria',
         theme: ThemeData(
           //el fondo va dentro de el tema
-          primarySwatch: Colors.cyan[200],
+          primarySwatch: Colors.amber,
         ), //finthemedata
         //ruta de ventanas enganchar a los widgets
         routes: <String, WidgetBuilder>{
