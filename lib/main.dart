@@ -19,6 +19,7 @@ class VeterinariaApp extends StatelessWidget {
           "/productos": (BuildContext context) => Productos(),
           "/contacto": (BuildContext context) => Contactos(),
         }, //fin routes- es el mapa de los botones de el menu
+
         home: Inicio()); //cierre de material app
   } //fin widget context
 } //fin VeterinariaApp class
@@ -72,7 +73,51 @@ class Inicio extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
         decoration: BoxDecoration(color: Colors.cyan, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/vianeyalejandra03/mis_imagenes/main/Equipo-Clinica-Veterinaria-Ejea-1.png"), alignment: Alignment.topCenter) //fin de decoration image
-            ), //fin caja
+            ), //fin box decoration
+
+//hacemos la columna de el mapa
+        child: Column(
+          children: <Widget>[
+            //hacemos la primera fila de el mapa
+            
+            Row(
+              mainAxisAlignment : MainAxisAlignment.center,
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child:RaisedButton(
+                      color: Colors.grey,
+                      shape: new RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
+
+                      onPressed: (){
+                      Navigator.pushNamed(context, "/inicio");
+                      },//onpressed
+                      child: SizedBox(
+                        width:100,
+                        height:100,
+                        child:Center(
+                          child : Text(
+                            "INICIO",
+                           textAlign: TextAlign.center,
+                           style: TextStyle(color: Colors.indigo,
+                           fontWeight:FontWeight.w600 ),
+                          ),//fin del center
+                        ),//fin center
+                      ),//fin sizedbox de inicio
+
+                    ),//boton inicio
+                    
+                  )//fin padding
+                ],//fin widget niño
+              ),//fin de column dentro de column
+            ),//cierre de row- fila 1
+          ], //cierre de children widget
+        ), //cierre de column en el child
+
+
       ), //fin del container
     ); //fin scaffold
   } //fin de el widget inicio
