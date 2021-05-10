@@ -32,7 +32,7 @@ class Empresa extends StatelessWidget {
         title: new Text('EMPRESA Veterinaria'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Empresa"),
+        child: Text("Seccion Empresa benitez"),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
@@ -46,7 +46,7 @@ class Productos extends StatelessWidget {
         title: new Text('PRODUCTOS de Veterinaria'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Productos"),
+        child: Text("Seccion Productos benitez"),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
@@ -60,7 +60,7 @@ class Contactos extends StatelessWidget {
         title: new Text('CONTACTOS Veterinaria'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Contactos"),
+        child: Text("Seccion Contactos benitez"),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
