@@ -169,7 +169,7 @@ class Inicio extends StatelessWidget {
                           width: 100,
                           height: 100,
                           child: Center(
-                            child: Text("CONTACTO", textAlign: TextAlign.center),
+                            child: Text("CONTACTO", textAlign: TextAlign.center, style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900)),
                           ),
                         ),
                       ),
